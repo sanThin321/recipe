@@ -1,0 +1,284 @@
+/*
+Template Name:Pizza hut
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+/********************* center ****************/
+
+#center{  
+  padding-top:50px;
+  padding-bottom:50px;
+  }
+ .center_1{ 
+  padding-top:100px;
+  }
+ .center_1 h5{ 
+  padding-top:10px;
+  padding-bottom:10px;
+  letter-spacing:1px;
+  }
+ .center_1 h3{ 
+  padding-top:10px;
+  padding-bottom:10px;
+  font-weight:800;
+  letter-spacing:1px;
+  }
+ .center_1 h3 a{ 
+  color: #ff3f34;
+  font-weight:800;
+  letter-spacing:1px;
+  }
+ .center_2 li{ 
+  padding-right:5px;
+  display:inline;
+  }
+ #center .img-responsive,
+ #center .thumbnail > img,
+ #center .thumbnail a > img,
+ #center .carousel-inner > .item > img,
+ #center .carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+ /* ------------------- Carousel Styling ------------------- */
+ #center .carousel-inner {
+   border-radius: 15px;
+   /* margin-top: 30px; */
+ }
+ #center .carousel-indicators .active {
+  background-color: #09b163;
+ }
+ #center .carousel-indicators li {
+  background-color: rgb(5, 196, 107);
+ }
+ #center .carousel-caption {
+   background-color: rgba(0,0,0,.5);
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 10;
+   padding: 0 0 10px 25px;
+   color: #fff;
+   text-align: left;
+ }
+ #center .carousel-indicators {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   width: 100%;
+   z-index: 15;
+   margin: 0;
+   padding: 0 25px 25px 0;
+   text-align: right;
+ }
+ #center .carousel-control.left,
+ #center .carousel-control.right {
+   background-image: none;
+ }
+ /* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+ @media screen and (min-width: 768px) {
+ }
+ @media screen and (min-width: 992px) {
+ }
+ /********************* center_end ****************/
+ /********************* middle ****************/
+ .middle_2 {
+  text-align:right;
+  padding-right:67px;
+  padding-top:80px;
+ }
+ .middle_2 h5 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+ letter-spacing: 1px;
+ }
+ .middle_2 h3 {
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-weight: 800;
+ letter-spacing: 1px;
+ }
+ .middle_2 h3 a {
+ color: #ff3f34;
+ font-weight: 800;
+ letter-spacing: 1px;
+ }
+ .middle_3{ 
+  text-align:right;
+  padding-right:67px;
+  }
+ /********************* middle_end ****************/
+ /********************* tasty ****************/
+ #tasty{  
+  padding-bottom:50px;
+  }
+ .tasty_1{ 
+  text-align:center;
+  padding-top:20px; 
+  }
+ .tasty_1 h3{
+ padding-top:5px;
+ padding-bottom:40px;
+ font-weight: 800;
+ letter-spacing: 1px;
+ }
+ .tasty_1 h3 a {
+ color: #ff3f34;
+ font-weight: 800;
+ letter-spacing: 1px;
+ }
+ .tasty_2 h5{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: #ff3f34;
+ }
+ .tasty_3{ 
+  padding-bottom: 13px;
+  }
+ .tasty_main{
+  border: 1px solid #f1eded;
+  padding: 15px;
+  text-align:center;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.2), 0 10px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+ .tasty_main:hover{
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.2), 0 10px 30px 0 rgba(0,0,0,.1);
+ }
+ /********************* tasty_end ****************/
+ 
+ /********************* special ****************/
+ /* The controlsy */
+ #special .carousel-control {
+   left: -12px;
+     height: 40px;
+     width: 40px;
+     background: none repeat scroll 0 0 #222222;
+     border: 4px solid #FFFFFF;
+     border-radius: 23px 23px 23px 23px;
+     margin-top: 90px;
+ }
+ /* The indicators */
+ #special .carousel-indicators {
+     right: 50%;
+     top: auto;
+     bottom: -35px;
+     margin-right: -19px;
+     font-size: 30px;
+ }
+ /* The colour of the indicators */
+ #special .carousel-indicators li {
+   background: #cecece;
+ }
+ #special .carousel-indicators .active {
+  background: #428bca;
+ }
+ #special .thumbnail {
+  border:none;
+ }
+ /********************* special_end ****************/
+ @media screen and (max-width : 767px){
+ .center_1 {
+  padding-top: 0px;
+ }
+ #center {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+ }
+ .center_1 h3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+ }
+ .center_2 ul{  
+  padding-bottom:15px;
+ }
+ .middle_2 {
+  text-align: center;
+  padding-right: 0px;
+  padding-top: 20px;
+ }
+ .middle_3 {
+  text-align: center;
+  padding-right: 0px;
+ }
+ #middle{
+  text-align: center;
+ }
+ .tasty_1 h3 {
+  padding-bottom: 10px;
+ }
+ #tasty {
+  padding-bottom: 0px;
+  text-align: center;
+ }
+ }
+ @media (min-width:470px) and (max-width:767px) { 
+ 
+ 
+ }
+  
+ @media (min-width:768px) and (max-width:960px) { 
+ .center_1 {
+  padding-top: 0px;
+ }
+ .center_1 h5 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+ }
+ .center_1 h3 {
+  font-size: 29px;
+ }
+ .middle_2 {
+  padding-right: 0px;
+  padding-top: 0px;
+ }
+ .middle_2 h3 {
+  font-size: 36px;
+ }
+ .tasty_main {
+  margin-bottom: 10px;
+ }
+ #order {
+  padding-top: 0px;
+ }
+ #tasty {
+   padding-bottom: 30px;
+ }
+ #order .ih-item.square {
+  width: 100%;
+  height: 100%;
+ }
+ }
+ @media (min-width:961px) and (max-width:1200px) {
+ .center_1 {
+  padding-top: 0px;
+ }
+ .center_1 h5 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+ }
+ .center_1 h3 {
+  font-size: 29px;
+ }
+ .middle_2 {
+  padding-right: 0px;
+  padding-top: 0px;
+ }
+ .middle_2 h3 {
+  font-size: 36px;
+ }
+ .tasty_main {
+  margin-bottom: 10px;
+ }
+ #tasty {
+   padding-bottom: 30px;
+ }
+ }
+ 
+ 

@@ -1,0 +1,28 @@
+.modal {
+    z-index: 1050;
+    margin-top: 10vh; /* Adjust margin using viewport units */
+    margin-left: 30%; /* Adjust margin using percentage */
+    max-width: 80%; /* Limit maximum width of the modal */
+    overflow-y: auto; /* Vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Darken background overlay */
+.modal-backdrop {
+    z-index: 1040;
+}
+
+/* Override Bootstrap's modal positioning */
+.modal-dialog {
+    margin: 5vh auto; /* Adjust margin using viewport units */
+    max-width: 100%; /* Adjust max-width as needed */
+}
+
+/* Ensure modal content is centered */
+.modal-content {
+    margin: 0 auto;
+}
+
+.modal-body {
+    text-align: left;
+}

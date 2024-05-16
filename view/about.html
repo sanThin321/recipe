@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Collage</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/about.css">
+
+</head>
+
+<body>
+
+  <section id="header" class="cd-secondary-nav">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#dropdown-thumbnail-preview">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h3 style="color: red; margin-top: 20px;">RECIPE COLLAGE</h3>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="home.html" class="hvr-underline-from-center">HOME</a></li>
+              <li><a href="about.html" class="hvr-underline-from-center">ABOUT</a></li>
+              <li><a href="gallery.html" class="hvr-underline-from-center">GALLERY</a></li>
+              <li><a href="your_recipe.html" class="hvr-underline-from-center">YOUR RECIPE</a></li>
+              <img src="img/profile.png"
+                style="border-radius:50%; height: 50px;width: 50px; margin-top:5px; margin-left:5px;"
+                id="profileModalBtn"></img>
+            </ul>
+          </div>
+          <div id="profileModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                    <div class="first-details">
+                        <!-- User Image -->
+                        <img src="./img/profile.png" alt="User Image" class="profile-img-modal" />
+                        <!-- Heading Beside Image -->
+                        <div class="profile-heading">
+                            <p>Name: <span>Meow Meow</span></p>
+                            <p>Email: <span>example@gmail.com</span></p>
+                            <p>Contact: <span>17892789</span></p>
+                        </div>
+                    </div>
+                    <!-- Position the logout link to the top-right corner -->
+                    <div class="logout-link-container">
+                        <!-- Add Logout link -->
+                        <p><a href="in" id="logoutLink">Logout</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- /.navbar-collapse -->
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div class="about-content">
+    <div>
+      <div>
+        <h2 class="about-heading">About</h2>
+        <p>Welcome to Recipe Collage, where tradition meets taste! We are passionate about preserving and celebrating the rich culinary heritage of Bhutan. Our platform serves as a gathering place for food enthusiasts, offering a delightful array of authentic recipes that have been cherished and passed down through generations.</p>
+        <h2 class="mission">Our Mission</h2>
+        <div>
+          <img class="img1" src="img/bhutanese dish.jpeg" alt="Bhutanese Cuisine">
+        </div>
+        <p class="mtext">At Recipe Collage, our mission is to honor Bhutanese culinary traditions by sharing authentic recipes and stories that reflect the soul of our culture. Through our platform, we aim to create a sense of community and connection, inviting individuals to explore the flavors and stories behind each dish.</p>
+        <h2 class="Vision">Our Vision</h2>
+        <p class="vtext">We envision a world where Bhutanese cuisine is celebrated and appreciated for its unique flavors, diversity, and cultural significance. Through our work, we strive to promote sustainable food practices, foster cultural appreciation, and inspire a deeper understanding of Bhutan's culinary heritage.</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img class="img2" src="img/tradition.jpg" alt="Bhutanese Culture">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+  <!-- <div class="about-content">
+
+    <br>
+    <h2 class="about-heading">About</h2>
+
+    <img class="img1" src="img/bhutanese dish.jpeg" alt="Bhutanese Cuisine" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0;">
+    
+    <p>Welcome to Recipe Collage, where tradition meets taste! We are passionate about preserving and celebrating the rich culinary heritage of Bhutan. Our platform serves as a gathering place for food enthusiasts, offering a delightful array of authentic recipes that have been cherished and passed down through generations.</p>
+        
+    <h2>Our Mission</h2>
+    <p>At Recipe Collage, our mission is to honor Bhutanese culinary traditions by sharing authentic recipes and stories that reflect the soul of our culture. Through our platform, we aim to create a sense of community and connection, inviting individuals to explore the flavors and stories behind each dish.</p>
+    
+    <h2>Our Vision</h2>
+    <p>We envision a world where Bhutanese cuisine is celebrated and appreciated for its unique flavors, diversity, and cultural significance. Through our work, we strive to promote sustainable food practices, foster cultural appreciation, and inspire a deeper understanding of Bhutan's culinary heritage.</p>
+    
+    Add another image related to Bhutanese culture -->
+    <!-- <img class="img" src="img/tradition.jpg" alt="Bhutanese Culture" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0;">
+</div> -->
+
+
+  <section id="footer" class="clearfix"
+    style="white-space: nowrap; overflow-x: auto; display: flex; flex-direction: column; align-items: center;">
+    <div class="col-sm-3" style="margin-right: 20px; padding-left: 105px;">
+      <div class="footer_2" style="
+display: flex; padding-left: 30px;">
+        <h4>Contact Us</h4>
+      </div>
+      <div class="footer_3">
+        <p>Phone : +975 77346842</p>
+      </div>
+      <div class="footer_4">
+        <p>Email : <a href="#">info@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="row" style="display: inline-flex;">
+
+      <div class="col-sm-6" style="
+      width: 100%;
+  ">
+        <div class="footer_5">
+          <h4>Leave your Feedback here!</h4>
+        </div>
+        <div class="col-sm-6 space_all">
+          <div class="footer_6">
+            <input type="text" class="form-control" placeholder="Name" />
+          </div>
+        </div>
+        <div class="col-sm-6 space_all">
+          <div class="footer_6">
+            <input type="text" class="form-control" placeholder="Phone" />
+          </div>
+        </div>
+        <div class="footer_7">
+          <input type="text" class="form-control" placeholder="Email" />
+        </div>
+        <div class="footer_8">
+          <textarea placeholder="Comment" class="form-control"></textarea>
+        </div>
+        <div class="footer_9">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script>
+    $(document).ready(function () {
+      /*****Fixed Menu******/
+      var secondaryNav = $('.cd-secondary-nav'),
+        secondaryNavTopPosition = secondaryNav.offset().top;
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() > secondaryNavTopPosition) {
+          secondaryNav.addClass('is-fixed');
+        } else {
+          secondaryNav.removeClass('is-fixed');
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#Carousel').carousel({
+        interval: 5000
+      })
+    });
+
+    // Get the modal
+    var modal = document.getElementById("profileModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("profileModalBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+  </script>
+</body>
+
+</html>
