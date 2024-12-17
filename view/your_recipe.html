@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="Recipe collage/css/about.css">
-    <link rel="stylesheet" href="Recipe collage/css/yr.css">
+    <!-- <link rel="stylesheet" href="Recipe collage/css/yr.css"> -->
 </head>
 <style>
     .table {
@@ -108,23 +108,31 @@ tr:hover {
     Your Recipe
 </h2>
 <div class="table">
-    <table border="2px" id="table">
+    <!-- <table border="2px" id="myTable">
         <tr>
             <th>Sl. No.</th>
             <th>Name of the Dish</th>
             <th>Edit</th>
-        </tr>
+        </tr> -->
+        
         <!-- Add your table rows here -->
-        <tr>
-            <td>1</td>
-            <td>Haenty</td>
-            <td><a href="recipe_edit.html" target="_self" class="btn">Edit</a></td>
-        </tr>
+        <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr> -->
 
-        <tr>
+        <!-- <tr>
             <td>2</td>
             <td>Beef momo</td>
             <td><a href="recipe_edit.html" target="_self" class="btn">Edit</a></td>
+        </tr> -->
+    <!-- </table> -->
+    <table id="myTable">
+        <tr>
+            <th>RID</th>
+            <th>Recipe Name</th>
+            <th>Action</th>
         </tr>
     </table>
 </div>
@@ -226,7 +234,7 @@ tr:hover {
         }
     }
 </script>
-<script src="js/recipe.js"></script>
+<script src="js/recipeTable.js"></script>
 </body>
 </html>
 

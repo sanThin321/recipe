@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="/login" method="post">
+        <form id="loginForm">
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
@@ -21,11 +21,8 @@
             <button type="submit" class="btn" id="loginButton">Login</button>
         </form>
         <p>Not registered yet? <a href="register.html">Register here</a></p>
+        <a href="forgot_pass.html">Forgot Password?</a>
     </div>
-    <script>
-        document.getElementById("loginButton").addEventListener("click", function() {
-            window.location.href = "home.html"; // Change "home.html" to the URL of your home page
-        });
-    </script>
+    <script src="js/user/login.js"></script>
 </body>
 </html>

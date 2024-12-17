@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="Recipe collage/css/about.css">
-    <link rel="stylesheet" href="Recipe collage/css/yr.css">
+    <!-- <link rel="stylesheet" href="Recipe collage/css/about.css"> -->
+    <!-- <link rel="stylesheet" href="Recipe collage/css/yr.css"> -->
 </head>
 <body>
 
@@ -79,33 +79,21 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">
                 <div class="form">
-                    <form id="recipeForm" enctype="multipart/form-data">
-                        <label for="recipe-name">Recipe Name</label>
-                        <input type="text" id="recipe-name" name="recipe-name" placeholder="Enter recipe name..."
-                            class="form-control">
+                    <form id="edit_recipe" enctype="multipart/form-data">
+                        <label for="recipeName">Recipe Name:</label>
+                        <input type="text" id="recipeName" name="recipeName" class="form-control" placeholder="Enter recipe name..." required><br>
 
-                        <br><br>
+                        <label for="ingredients">Ingredients:</label>
+                        <textarea id="ingredients" name="ingredients" class="form-control" placeholder="Enter ingredients..." required></textarea><br>
 
-                        <label for="ingredients">Ingredients</label>
-                        <textarea id="ingredients" name="ingredients" placeholder="Enter ingredients..."
-                            class="form-control"></textarea>
+                        <label for="steps">Steps:</label>
+                        <textarea id="steps" name="steps" class="form-control" required></textarea><br>
 
-                        <br><br>
-
-                        <label for="stepwise-recipe">Stepwise Recipe</label>
-                        <textarea id="stepwise-recipe" name="stepwise-recipe" placeholder="Enter stepwise recipe..."
-                            class="form-control"></textarea>
-
-                        <br><br>
-
-                        <label for="recipe-image">Upload Image</label>
-                        <input type="file" id="recipe-image" name="recipe-image" accept="image/*"
-                            class="form-control-file">
-
-                        <br><br>
+                        <label for="image">Image:</label>
+                        <input type="file" id="image" name="image" accept="image/*" class="form-control"><br>
 
                         <input type="submit" value="Update" class="btn btn-primary">
-                        <input type="submit" value="Delete" class="btn btn-primary">
+                        <input type="submit" id="Delete" value="Delete" class="btn btn-primary">
                     </form>
                 </div>
             </div>
@@ -210,6 +198,7 @@
         }
     }
 </script>
+<script src="js/edit_recipe.js"></script>
 </body>
 </html>
 

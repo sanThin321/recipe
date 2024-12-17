@@ -18,7 +18,7 @@ const (
 
 var Db *sql.DB
 
-func Init() {
+func init() {
 	dbInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=require", postgres_host, postgres_port, postgres_user, postgres_password, postgres_dbname)
 
 	var err error
@@ -26,8 +26,6 @@ func Init() {
 	if err != nil {
 		log.Fatalf("Error connecting to the database: %v", err)
 	}
-
-	defer Db.Close() // Close the database connection immediately after opening
 
 	// Test the connection by pinging the database
 	err = Db.Ping()

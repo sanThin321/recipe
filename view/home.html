@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/gallery.css">
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
@@ -40,30 +41,32 @@
               <li class="active"><a href="home.html" class="hvr-underline-from-center">HOME</a></li>
               <li><a href="about.html" class="hvr-underline-from-center">ABOUT</a></li>
               <li><a href="gallery.html" class="hvr-underline-from-center">GALLERY</a></li>
+              <li><a href="edit_profile.html" class="hvr-underline-from-center">Edit Profile</a></li>
               <li><a href="your_recipe.html" class="hvr-underline-from-center">YOUR RECIPE</a></li>
-              <img src="img/profile.png"
+                <img src="img/profile.png"
                 style="border-radius:50%; height: 50px;width: 50px; margin-top:5px; margin-left:5px;"
-                id="profileModalBtn"></img>
+       
+                  id="profileModalBtn"></img>
             </ul>
           </div>
           <div id="profileModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <div class="modal-body">
+                <div style="cursor: pointer;" class="modal-body">
                     <div class="first-details">
                         <!-- User Image -->
-                        <img src="./img/profile.png" alt="User Image" class="profile-img-modal" />
+                        <img  src="img/profile.png" alt="User Image" class="profile-img-modal" id="edit_profile_pic" />
                         <!-- Heading Beside Image -->
                         <div class="profile-heading">
-                            <p>Name: <span>Meow Meow</span></p>
-                            <p>Email: <span>example@gmail.com</span></p>
-                            <p>Contact: <span>17892789</span></p>
+                            <p>Name: <span></span></p>
+                            <p>Email: <span></span></p>
+                            <p>Contact: <span></span></p>
                         </div>
                     </div>
                     <!-- Position the logout link to the top-right corner -->
-                    <div class="logout-link-container">
+                    <div style="display: flex; flex-direction: row; gap: 30px;" class="logout-link-container">
                         <!-- Add Logout link -->
-                        <p><a href="in" id="logoutLink">Logout</a></p>
+                        <p><a style="color: red;"  onclick="logout()" id="logoutLink">Logout</a></p>
                     </div>
                 </div>
             </div>
@@ -131,164 +134,16 @@
   </section>
 
   <section id="tasty">
-    <div class="container">
-      <div class="row">
-        <div class="tasty_1">
-          <h3>Top Lists!</h3>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="tasty_main clearfix">
-            <div class="tasty_1">
-              <a href="#"><img src="img/Emadatsi.jpg" alt="abc" class="img_responsive"></a>
-              <h5>Emadatsi</h5>
-              <p>Bhutanese spice.</p>
-            </div>
-            <div class="tasty_2">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn view-more-btn" data-toggle="modal" data-target="#myModal1">
-                View More
-              </button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ema-datsi</h5>
-                  </div>
-                  <div class="modal-body">
-                    Bhutanese spice description goes here.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="tasty_main clearfix">
-              <div class="tasty_2">
-                  <a href="#"><img src="img/Puta.webp" alt="abc" class="img_responsive"></a>
-                  <h5>Puta</h5>
-                  <p>Bhutanese noodles.</p>
-              </div>
-              <div class="tasty_2">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn view-more-btn" data-toggle="modal" data-target="#myModal2">
-                      View More
-                  </button>
-              </div>
-              <!-- Modal for Puta -->
-              <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Puta</h5>
-                          </div>
-                          <div class="modal-body">
-                              Bhutanese noodles description goes here.
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="tasty_main clearfix">
-              <div class="tasty_23">
-                  <a href="#"><img src="img/mengye.jpeg" alt="abc" class="img_responsive"></a>
-                  <h5>Mengye</h5>
-                  <p>Bhutanese pizza.</p>
-              </div>
-              <div class="tasty_2">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn view-more-btn" data-toggle="modal" data-target="#myModal3">
-                      View More
-                  </button>
-              </div>
-              <!-- Modal for Mengye -->
-              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Mengye</h5>
-                          </div>
-                          <div class="modal-body">
-                              Bhutanese pizza description goes here.
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      
-
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="tasty_main clearfix">
-              <div class="tasty_4">
-                  <a href="#"><img src="img/Haenty.webp" alt="abc" class="img_responsive"></a>
-                  <h5>Haenty</h5>
-                  <p>Bhutanese momo.</p>
-              </div>
-              <div class="tasty_2">
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn view-more-btn" data-toggle="modal" data-target="#myModal4">
-                      View More
-                  </button>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Haenty</h5>
-                          </div>
-                          <div class="modal-body">
-                              INGREDIENTS <br>
-                              1. Buckwheat flour – 2.5 kg <br>
-                              2. Dried and chopped turnip leaves <br>
-                              3. Perilla seeds (Zimtse) <br>
-                              4. Cabbage leaves <br>
-                              5. Cottage cheese (Datshi) – 8 balls <br>
-                              6. Onions – 0.5 kg <br>
-                              7. Ginger – 0.5 kg <br>
-                              8. Flour (Atta and Maida) – 4 kg <br>
-                              9. Chilli powder or green chillies <br>
-                              PROCEDURE <br>
-                              1. Take chopped, dried turnip leaves and boil them for about 30 minutes. <br>
-                              2. Roughly chop the cabbage leaves and boil them for about 20 minutes. <br>
-                              3. Squeeze both the turnip and cabbage leaves and keep them aside on a plate. <br>
-                              4. Cut the onions into small pieces and keep them on a plate. <br>
-                              5. Make ginger paste using mortar and pestle. <br>
-                              6. Crush the perilla seeds and in a bowl and mix it with chilli powder,onions and ginger paste. You can also add green chillies into the mixture.Make sure to cut the green chillies into small pieces. <br>
-                              7. Add the mixture to the boiled turnip and cabbage. <br>
-                              8. Add salt, cottage cheese and oil.
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      </div>
-    </div>
-  </section>
-
+		<div class="container">
+			<div class="row">
+				<div class="tasty_1">
+					<h3>Top Lists!</h3>
+				</div>
+        <main></main>
+				<div id="pop"></div>
+			</div>
+		</div>
+	</section>
   <section id="footer" class="clearfix"
     style="white-space: nowrap; overflow-x: auto; display: flex; flex-direction: column; align-items: center;">
     <div class="col-sm-3" style="margin-right: 20px; padding-left: 105px;">
@@ -381,6 +236,7 @@ display: flex; padding-left: 30px;">
         modal.style.display = "none";
       }
     }
+
     document.addEventListener("DOMContentLoaded", function() {
     // Get the logout link
     var logoutLink = document.getElementById("logoutLink");
@@ -389,15 +245,27 @@ display: flex; padding-left: 30px;">
     logoutLink.addEventListener("click", function(event) {
         event.preventDefault(); // Prevent default link behavior
 
+        fetch('/logout')
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "/";
+                } else {
+                    throw new Error(response.statusText);
+                }
+            })
+            .catch(e => {
+                alert(e);
+            });
+
         // Perform logout actions here (e.g., redirect to logout page, clear session, etc.)
         // For example:
-        alert("Logging out...");
-        // You can redirect the user to the logout page or perform any other logout action here
     });
 });
-
-
   </script>
+  <script src="js/recipesCard.js"></script>
+  <script src="js/user/login.js"></script>
+  <script src="js/user/logout.js"></script>
+  <script src="js/user/profiledata.js"></script>
 </body>
 
 </html>
